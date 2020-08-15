@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>045.046</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            /* padding: 50px; */
+            font-family: '微軟正黑體';
+        }
+
+        .container,
+        p {
+            margin-top: 3%;
+        }
+
+        .show {
+            color: green;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 45 Q1 -->
+        <p>45: 使用 JavaScript 語法，操控點擊後，能夠轉址到對應網站去</p>
+        <button class="google btn btn-outline-success">連到 Google</button>
+        <button class="yahoo btn btn-outline-warning">連到 Yahoo</button>
+
+        <hr>
+
+        <!-- 46Q1 -->
+        <p>46-1 : 部落格推薦連結，請抓取 data-id 的值後進行轉址</p>
+        <button class="google-Tom btn btn-primary" data-id="tom">Tom 推薦六角學院</button>
+        <button class="yahoo-John btn btn-dark" data-id="John">John 推薦六角學院</button>
+
+        <hr>
+        
+        <p>46-2 :網址規則是https://www.hexschool.com/?recommend="值"，該如何取出 recommend 的值？</p>
+        <p class="show"></p>
+        <p>#1：使用固定網址：https://www.hexschool.com/?recommend=tom</p>
+        <button class="getValue btn btn-outline-secondary">取出 recommend 的值</button>
+        <p>#2：使用新增及取得按鈕<br>- 以下在按鈕在codepen不能按，沒有作用 -</p>
+        <button class="addValue btn btn-outline-dark">增加 recommend 的值</button>
+        <button class="getValueTwo btn btn-outline-dark">取出 recommend 的值</button>
+    </div>
+    <script src="045.js"></script>
+</body>
+
+</html>
